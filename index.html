@@ -37,13 +37,13 @@
             <img src="images/breakfast.jpg" alt="Picture of desk with cookies and a laptop." width="300" height="250">
             <img src="https://images.pexels.com/photos/32822357/pexels-photo-32822357.jpeg" alt="Picture of a horse." width="300" height="250">
             <h2>Video</h2>
-            <video controls width="350" height="200">
+            <video controls width="350" height="200" autoplay>
                 <source src="https://videos.pexels.com/video-files/3987730/3987730-hd_1920_1080_24fps.mp4" type="video/mp4">
                 Your browser does not support video playback.
             </video>
             <h2>Audio</h2>
             <audio controls>
-                <source src="" type="audio/mpeg">
+                <source src="music/malinga.mp3" type="audio/mpeg" autoplay>
                 Your browser does not support audio playback.
             </audio>
             <h2>Tables</h2>
@@ -69,7 +69,10 @@
                 </tbody>
             </table>
             <h2>Forms</h2>
-            <form action="location" method="how" enctype="multipart/form-data">
+            <fieldset>
+            <legend>Personal Information</legend> 
+            <br><br>
+            <form action="user/api/" method="POST" enctype="multipart/form-data">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name">
                 <br><br>
@@ -92,5 +95,6 @@
                 <br><br>
                 <input type="submit" value="Submit">
             </form>
+            </fieldset>
         </body>
     </html>
